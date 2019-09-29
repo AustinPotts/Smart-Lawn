@@ -18,18 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wt-EH-NxW">
-                                <rect key="frame" x="117" y="296" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="0Wt-EH-NxW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrassLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Qe3-TN-civ">
+                                <rect key="frame" x="8" y="334" width="406" height="229"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Wt-EH-NxW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1xT-8P-tFq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qe3-TN-civ" secondAttribute="bottom" constant="299" id="E71-6v-coI"/>
+                            <constraint firstItem="Qe3-TN-civ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="aah-nH-qSU"/>
+                            <constraint firstAttribute="bottom" secondItem="0Wt-EH-NxW" secondAttribute="bottom" id="bXn-7V-tYk"/>
+                            <constraint firstItem="0Wt-EH-NxW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hRv-RY-JoQ"/>
+                            <constraint firstItem="Qe3-TN-civ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="290" id="hZW-61-1FH"/>
+                            <constraint firstAttribute="trailing" secondItem="0Wt-EH-NxW" secondAttribute="trailing" id="oVC-bh-qih"/>
+                            <constraint firstItem="Qe3-TN-civ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zZX-yU-FbO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Grass" width="640" height="1136"/>
+        <image name="GrassLogo" width="200" height="200"/>
+    </resources>
 </document>

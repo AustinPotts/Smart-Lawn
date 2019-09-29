@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vdL-CO-3ci">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9SX-IS-iZC">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,12 +31,150 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ku-xk-WbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997.1014492753625" y="103.79464285714285"/>
+            <point key="canvasLocation" x="2907.2463768115945" y="103.79464285714285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Appointments-->
+        <scene sceneID="v9I-JF-2An">
+            <objects>
+                <tableViewController id="eLz-8b-iEc" customClass="AppointmentsTableViewController" customModule="Smart_Lawn_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nEm-NR-DGw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppointmentCell" id="MBw-P8-0IW">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MBw-P8-0IW" id="YTE-Mr-e9J">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SU2-yx-rXn" kind="show" identifier="AppointDetailSegue" id="YT6-La-XmR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eLz-8b-iEc" id="SAV-ZR-Pyd"/>
+                            <outlet property="delegate" destination="eLz-8b-iEc" id="rOs-gz-MWl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Appointments" id="5Sq-Zn-pte">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hM6-Mq-pAM">
+                            <connections>
+                                <segue destination="SU2-yx-rXn" kind="show" identifier="AddAppointSegue" id="jhx-sf-353"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA2-Dr-IGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960.8695652173915" y="837.72321428571422"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="6Md-wx-wJe">
+            <objects>
+                <viewController id="SU2-yx-rXn" customClass="ScheduleViewController" customModule="Smart_Lawn_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xwe-cW-Bqz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="1Wr-Yu-tJ4">
+                                <rect key="frame" x="-25" y="88" width="459" height="725"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="ItT-91-a94">
+                                <rect key="frame" x="20" y="288" width="374" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-c5-eQa">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="42"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5T-Uz-xBo">
+                                        <rect key="frame" x="230" y="0.0" width="144" height="42"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-sG-rpv">
+                                <rect key="frame" x="20" y="400" width="374" height="266"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwV-02-dMH">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="42"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZt-C0-mUo">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrassLogo" translatesAutoresizingMaskIntoConstraints="NO" id="I4s-ZM-X6B">
+                                <rect key="frame" x="0.0" y="117" width="414" height="134"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="txI-6k-87N">
+                                <rect key="frame" x="20" y="666" width="394" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcJ-DJ-VGW">
+                                        <rect key="frame" x="0.0" y="43" width="165.5" height="42"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Specifiy your services:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-4u-iHU">
+                                        <rect key="frame" x="173.5" y="0.0" width="220.5" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7I8-4u-iHU" firstAttribute="top" secondItem="txI-6k-87N" secondAttribute="top" id="ayU-uX-Vex"/>
+                                    <constraint firstItem="7I8-4u-iHU" firstAttribute="leading" secondItem="WcJ-DJ-VGW" secondAttribute="trailing" constant="8" id="vdD-GJ-EEh"/>
+                                    <constraint firstAttribute="bottom" secondItem="7I8-4u-iHU" secondAttribute="bottom" id="zZK-RD-pLf"/>
+                                    <constraint firstAttribute="trailing" secondItem="7I8-4u-iHU" secondAttribute="trailing" id="zhT-xc-xYK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ItT-91-a94" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="0D4-5B-Ny0"/>
+                            <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="gJU-sG-rpv" secondAttribute="trailing" constant="20" id="3Dm-wz-Sa1"/>
+                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="bottom" secondItem="9wF-M3-itc" secondAttribute="bottom" id="FG0-86-XP3"/>
+                            <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="ItT-91-a94" secondAttribute="trailing" constant="20" id="FIx-7p-V40"/>
+                            <constraint firstItem="gJU-sG-rpv" firstAttribute="top" secondItem="ItT-91-a94" secondAttribute="bottom" constant="70" id="HB2-vP-Q3L"/>
+                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="-25" id="JAe-7t-4aN"/>
+                            <constraint firstItem="ItT-91-a94" firstAttribute="top" secondItem="I4s-ZM-X6B" secondAttribute="bottom" constant="37" id="LaN-Cd-zUy"/>
+                            <constraint firstItem="txI-6k-87N" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="ZZc-sF-odi"/>
+                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="top" secondItem="9wF-M3-itc" secondAttribute="top" id="Znp-vy-rWz"/>
+                            <constraint firstItem="ItT-91-a94" firstAttribute="top" secondItem="9wF-M3-itc" secondAttribute="top" constant="200" id="adC-pQ-NBA"/>
+                            <constraint firstItem="gJU-sG-rpv" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="bxq-zj-yer"/>
+                            <constraint firstItem="I4s-ZM-X6B" firstAttribute="trailing" secondItem="9wF-M3-itc" secondAttribute="trailing" id="mnt-WL-j6M"/>
+                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="trailing" secondItem="9wF-M3-itc" secondAttribute="trailing" constant="20" id="ouC-N2-uuv"/>
+                            <constraint firstItem="txI-6k-87N" firstAttribute="top" secondItem="gJU-sG-rpv" secondAttribute="bottom" id="pSD-Sz-qNz"/>
+                            <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="txI-6k-87N" secondAttribute="trailing" id="tdJ-L5-742"/>
+                            <constraint firstItem="I4s-ZM-X6B" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" id="zPg-1M-WWF"/>
+                            <constraint firstItem="I4s-ZM-X6B" firstAttribute="top" secondItem="9wF-M3-itc" secondAttribute="top" constant="29" id="zp1-dQ-6Vk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9wF-M3-itc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Schedule" id="JxJ-4M-LyS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pqy-e0-F86"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-Wg-fds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3773.913043478261" y="837.72321428571422"/>
+        </scene>
+        <!--Login-->
         <scene sceneID="Eic-YU-UWM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vdL-CO-3ci" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" id="m26-KG-yoC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DgA-T9-yzg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -49,7 +187,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8E-9w-73e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086.9565217391305" y="103.79464285714285"/>
+            <point key="canvasLocation" x="1997.1014492753625" y="103.79464285714285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PMp-sw-jc0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9SX-IS-iZC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f7U-gC-q7v">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vdL-CO-3ci" kind="relationship" relationship="viewControllers" id="SzW-oT-7Bq"/>
+                        <segue destination="XFn-bn-CRI" kind="relationship" relationship="viewControllers" id="lC8-h7-yal"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wjl-Ak-rdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="462"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="n6j-1M-rU3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XFn-bn-CRI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" id="34U-Ju-7rF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7r2-oe-xe9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eLz-8b-iEc" kind="relationship" relationship="rootViewController" id="wQ1-We-Xgs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-CS-BbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2050.7246376811595" y="837.72321428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Grass" width="640" height="1136"/>
+        <image name="GrassLogo" width="200" height="200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YT6-La-XmR"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,8 @@
 		45472F1C2340339E00EB74F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45472F1B2340339E00EB74F4 /* Assets.xcassets */; };
 		45472F1F2340339E00EB74F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45472F1D2340339E00EB74F4 /* LaunchScreen.storyboard */; };
 		45472F272340372D00EB74F4 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F262340372D00EB74F4 /* LogInView.swift */; };
+		45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */; };
+		45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2C2340446400EB74F4 /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		45472F1E2340339E00EB74F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45472F202340339E00EB74F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45472F262340372D00EB74F4 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewController.swift; sourceTree = "<group>"; };
+		45472F2C2340446400EB74F4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		45472F082340339C00EB74F4 = {
 			isa = PBXGroup;
 			children = (
+				45472F2E234044CE00EB74F4 /* View Controllers */,
 				45472F2923403B5C00EB74F4 /* StoryBoards */,
 				45472F28234037AB00EB74F4 /* Views */,
 				45472F132340339C00EB74F4 /* Smart-Lawn-App */,
@@ -78,6 +83,15 @@
 				45472F1D2340339E00EB74F4 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		45472F2E234044CE00EB74F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */,
+				45472F2C2340446400EB74F4 /* ScheduleViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,8 @@
 			files = (
 				45472F272340372D00EB74F4 /* LogInView.swift in Sources */,
 				45472F152340339C00EB74F4 /* AppDelegate.swift in Sources */,
+				45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */,
+				45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
