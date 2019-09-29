@@ -10,13 +10,48 @@ import UIKit
 
 class ScheduleViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var servicePicker: UIPickerView!
+    @IBOutlet weak var directionsTextview: UITextView!
+    
+    var pickerData: [String] = []
+    var pickerSelection: String?
+    
+    var appointmentController: AppointmentController?
+    var appointment: Appointment?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        servicePicker.dataSource = self
+        servicePicker.delegate = self
+        
+        pickerData = ["Lawn Mowing", "Weed Wack", "Leaf Blower", "Branch Trimming", "Bush Sculpting"]
     }
     
-
+    
+    @IBAction func save(_ sender: Any) {
+        guard let username = usernameTextField.text,
+        !username.isEmpty,
+        let service = pickerSelection,
+        let directions = directionsTextview.text,
+            !directions.isEmpty else {return}
+        
+        appointmentController?.createAppointment(username: username, service: service, directions: directions)
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+    
+    func updateViews(){
+        title = appointment?.username ?? "Schedule"
+        
+        usernameTextField.text = appointment?.username
+        directionsTextview.text = appointment?.directions
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +62,24 @@ class ScheduleViewController: UIViewController {
     }
     */
 
+}
+
+extension ScheduleViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickerSelection = pickerData[row]
+    }
+    
 }

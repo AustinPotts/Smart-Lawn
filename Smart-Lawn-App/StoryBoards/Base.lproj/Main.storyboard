@@ -163,8 +163,17 @@
                         <viewLayoutGuide key="safeArea" id="9wF-M3-itc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Schedule" id="JxJ-4M-LyS">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pqy-e0-F86"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pqy-e0-F86">
+                            <connections>
+                                <action selector="save:" destination="SU2-yx-rXn" id="GIo-SQ-Cqu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="directionsTextview" destination="7I8-4u-iHU" id="mRG-Vj-8UW"/>
+                        <outlet property="servicePicker" destination="gZt-C0-mUo" id="qhf-dw-iqZ"/>
+                        <outlet property="usernameTextField" destination="q5T-Uz-xBo" id="APl-6Z-dYc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-Wg-fds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

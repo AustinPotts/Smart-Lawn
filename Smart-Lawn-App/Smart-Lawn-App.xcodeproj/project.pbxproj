@@ -14,6 +14,11 @@
 		45472F272340372D00EB74F4 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F262340372D00EB74F4 /* LogInView.swift */; };
 		45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */; };
 		45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2C2340446400EB74F4 /* ScheduleViewController.swift */; };
+		45472F312340466300EB74F4 /* Appointment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2F2340466300EB74F4 /* Appointment.xcdatamodeld */; };
+		45472F33234047A100EB74F4 /* AppointmentRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F32234047A100EB74F4 /* AppointmentRepresentation.swift */; };
+		45472F362340484000EB74F4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F352340484000EB74F4 /* CoreDataStack.swift */; };
+		45472F382340496000EB74F4 /* Appointment+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F372340496000EB74F4 /* Appointment+Convenience.swift */; };
+		45472F3A23404A4A00EB74F4 /* AppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F3923404A4A00EB74F4 /* AppointmentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		45472F262340372D00EB74F4 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewController.swift; sourceTree = "<group>"; };
 		45472F2C2340446400EB74F4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		45472F302340466300EB74F4 /* Appointment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Appointment.xcdatamodel; sourceTree = "<group>"; };
+		45472F32234047A100EB74F4 /* AppointmentRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentRepresentation.swift; sourceTree = "<group>"; };
+		45472F352340484000EB74F4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		45472F372340496000EB74F4 /* Appointment+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment+Convenience.swift"; sourceTree = "<group>"; };
+		45472F3923404A4A00EB74F4 /* AppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,8 @@
 		45472F082340339C00EB74F4 = {
 			isa = PBXGroup;
 			children = (
+				45472F3923404A4A00EB74F4 /* AppointmentController.swift */,
+				45472F342340481900EB74F4 /* Models */,
 				45472F2E234044CE00EB74F4 /* View Controllers */,
 				45472F2923403B5C00EB74F4 /* StoryBoards */,
 				45472F28234037AB00EB74F4 /* Views */,
@@ -92,6 +104,17 @@
 				45472F2C2340446400EB74F4 /* ScheduleViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		45472F342340481900EB74F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45472F352340484000EB74F4 /* CoreDataStack.swift */,
+				45472F372340496000EB74F4 /* Appointment+Convenience.swift */,
+				45472F2F2340466300EB74F4 /* Appointment.xcdatamodeld */,
+				45472F32234047A100EB74F4 /* AppointmentRepresentation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45472F362340484000EB74F4 /* CoreDataStack.swift in Sources */,
+				45472F312340466300EB74F4 /* Appointment.xcdatamodeld in Sources */,
 				45472F272340372D00EB74F4 /* LogInView.swift in Sources */,
+				45472F33234047A100EB74F4 /* AppointmentRepresentation.swift in Sources */,
 				45472F152340339C00EB74F4 /* AppDelegate.swift in Sources */,
 				45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */,
 				45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */,
+				45472F3A23404A4A00EB74F4 /* AppointmentController.swift in Sources */,
+				45472F382340496000EB74F4 /* Appointment+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45472F2F2340466300EB74F4 /* Appointment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45472F302340466300EB74F4 /* Appointment.xcdatamodel */,
+			);
+			currentVersion = 45472F302340466300EB74F4 /* Appointment.xcdatamodel */;
+			path = Appointment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45472F092340339C00EB74F4 /* Project object */;
 }
