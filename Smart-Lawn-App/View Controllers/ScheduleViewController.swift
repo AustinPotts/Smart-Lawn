@@ -60,6 +60,7 @@ class ScheduleViewController: UIViewController {
         
         usernameTextField.text = appointment?.username
         directionsTextview.text = appointment?.directions
+        //pickerSelection = appointment?.service
     }
     
     /*
