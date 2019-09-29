@@ -24,6 +24,8 @@ class ScheduleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateViews()
 
         servicePicker.dataSource = self
         servicePicker.delegate = self
@@ -39,7 +41,15 @@ class ScheduleViewController: UIViewController {
         let directions = directionsTextview.text,
             !directions.isEmpty else {return}
         
-        appointmentController?.createAppointment(username: username, service: service, directions: directions)
+        if let appointments = appointment {
+            appointmentController?.updateAppointment(appointment: appointments, with: username, service: service, directions: directions)
+        } else {
+            self.appointmentController?.createAppointment(username: username, service: service, directions: directions)
+            
+            
+        }
+        
+        
         navigationController?.popViewController(animated: true)
         
     }
