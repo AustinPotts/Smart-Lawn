@@ -21,6 +21,8 @@
 		45472F502340FE5000EB74F4 /* AppointmentRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F4F2340FE5000EB74F4 /* AppointmentRepresentation.swift */; };
 		45472F9C2348FECE00EB74F4 /* ServicePartCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */; };
 		45472F9E2348FF3A00EB74F4 /* PartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */; };
+		45472FA1234902F200EB74F4 /* ServicePartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472FA0234902F200EB74F4 /* ServicePartController.swift */; };
+		45472FA32349034200EB74F4 /* ServicePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472FA22349034200EB74F4 /* ServicePart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		45472F4F2340FE5000EB74F4 /* AppointmentRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppointmentRepresentation.swift; path = ../AppointmentRepresentation.swift; sourceTree = "<group>"; };
 		45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePartCollectionViewController.swift; sourceTree = "<group>"; };
 		45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCollectionViewCell.swift; sourceTree = "<group>"; };
+		45472FA0234902F200EB74F4 /* ServicePartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePartController.swift; sourceTree = "<group>"; };
+		45472FA22349034200EB74F4 /* ServicePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		45472F082340339C00EB74F4 = {
 			isa = PBXGroup;
 			children = (
+				45472FA42349040D00EB74F4 /* Model Controllers */,
 				45472F342340481900EB74F4 /* Models */,
 				45472F2E234044CE00EB74F4 /* View Controllers */,
 				45472F2923403B5C00EB74F4 /* StoryBoards */,
@@ -87,6 +92,7 @@
 		45472F28234037AB00EB74F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */,
 				45472F262340372D00EB74F4 /* LogInView.swift */,
 			);
 			path = Views;
@@ -104,7 +110,7 @@
 		45472F2E234044CE00EB74F4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */,
+				45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */,
 				45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */,
 				45472F2C2340446400EB74F4 /* ScheduleViewController.swift */,
 			);
@@ -114,14 +120,22 @@
 		45472F342340481900EB74F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */,
+				45472FA22349034200EB74F4 /* ServicePart.swift */,
 				45472F4F2340FE5000EB74F4 /* AppointmentRepresentation.swift */,
-				45472F3923404A4A00EB74F4 /* AppointmentController.swift */,
 				45472F352340484000EB74F4 /* CoreDataStack.swift */,
 				45472F372340496000EB74F4 /* Appointment+Convenience.swift */,
 				45472F2F2340466300EB74F4 /* Appointment.xcdatamodeld */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		45472FA42349040D00EB74F4 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45472F3923404A4A00EB74F4 /* AppointmentController.swift */,
+				45472FA0234902F200EB74F4 /* ServicePartController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +215,10 @@
 				45472F272340372D00EB74F4 /* LogInView.swift in Sources */,
 				45472F152340339C00EB74F4 /* AppDelegate.swift in Sources */,
 				45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */,
+				45472FA1234902F200EB74F4 /* ServicePartController.swift in Sources */,
 				45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */,
 				45472F3A23404A4A00EB74F4 /* AppointmentController.swift in Sources */,
+				45472FA32349034200EB74F4 /* ServicePart.swift in Sources */,
 				45472F502340FE5000EB74F4 /* AppointmentRepresentation.swift in Sources */,
 				45472F382340496000EB74F4 /* Appointment+Convenience.swift in Sources */,
 				45472F9C2348FECE00EB74F4 /* ServicePartCollectionViewController.swift in Sources */,

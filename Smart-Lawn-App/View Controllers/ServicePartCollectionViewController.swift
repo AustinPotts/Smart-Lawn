@@ -12,6 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class ServicePartCollectionViewController: UICollectionViewController {
 
+    
+    let serviceController = ServiceController()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,19 +42,22 @@ class ServicePartCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return serviceController.serviceProvided.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServiceProvidedCell", for: indexPath) as? PartCollectionViewCell else{return UICollectionViewCell()}
+        
+        let serviceProvided = serviceController.serviceProvided[indexPath.row]
+        cell.serviceProvided = serviceProvided
     
-        // Configure the cell
+        
     
         return cell
     }

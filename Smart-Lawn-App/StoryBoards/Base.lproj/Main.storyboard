@@ -249,19 +249,18 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7KR-0A-rsd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.029715580080000002" green="0.5" blue="0.019732801790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cGX-Vj-Ffg">
                             <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
-                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" id="vaT-L4-yGl">
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" id="vaT-L4-yGl">
                             <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServicePartCell" id="sfa-cR-rsQ" customClass="PartCollectionViewCell" customModule="Smart_Lawn_App" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServiceProvidedCell" id="sfa-cR-rsQ" customClass="PartCollectionViewCell" customModule="Smart_Lawn_App" customModuleProvider="target">
                                 <rect key="frame" x="107" y="10" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -274,11 +273,11 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-vz-cgL">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-SX-fFh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="155"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-SX-fFh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="171.5"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir5-aD-rr5">
-                                                            <rect key="frame" x="79" y="163" width="42" height="37"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir5-aD-rr5">
+                                                            <rect key="frame" x="79" y="179.5" width="42" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -313,17 +312,19 @@
                             <outlet property="delegate" destination="9ik-x7-RJP" id="7lw-qz-UyR"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Service Parts" id="of3-oS-LIc"/>
+                    <navigationItem key="navigationItem" title="Service Parts" id="of3-oS-LIc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="uSQ-Jh-aWK"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6m-PH-6aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2960.8695652173915" y="1558.9285714285713"/>
+            <point key="canvasLocation" x="2961" y="1880"/>
         </scene>
-        <!--Parts-->
+        <!--Services-->
         <scene sceneID="lKt-Ab-KNt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UyN-7J-2R9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Parts" id="c26-rH-Uxb"/>
+                    <tabBarItem key="tabBarItem" title="Services" id="c26-rH-Uxb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zlJ-Wc-Ubg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -336,7 +337,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-cM-RCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="1558.9285714285713"/>
+            <point key="canvasLocation" x="1997" y="1880"/>
         </scene>
     </scenes>
     <resources>
