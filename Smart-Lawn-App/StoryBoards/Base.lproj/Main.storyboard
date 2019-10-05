@@ -209,17 +209,19 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9SX-IS-iZC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f7U-gC-q7v">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="vdL-CO-3ci" kind="relationship" relationship="viewControllers" id="SzW-oT-7Bq"/>
                         <segue destination="XFn-bn-CRI" kind="relationship" relationship="viewControllers" id="lC8-h7-yal"/>
+                        <segue destination="UyN-7J-2R9" kind="relationship" relationship="viewControllers" id="Sd3-Aj-9yJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjl-Ak-rdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="462"/>
+            <point key="canvasLocation" x="519" y="1006"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="n6j-1M-rU3">
@@ -239,6 +241,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-CS-BbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2050.7246376811595" y="837.72321428571422"/>
+        </scene>
+        <!--Service Parts-->
+        <scene sceneID="m0E-gC-W3c">
+            <objects>
+                <collectionViewController id="9ik-x7-RJP" customClass="ServicePartCollectionViewController" customModule="Smart_Lawn_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7KR-0A-rsd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.029715580080000002" green="0.5" blue="0.019732801790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cGX-Vj-Ffg">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" id="vaT-L4-yGl">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServicePartCell" id="sfa-cR-rsQ" customClass="PartCollectionViewCell" customModule="Smart_Lawn_App" customModuleProvider="target">
+                                <rect key="frame" x="107" y="10" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CJ-C4-Sqd">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-vz-cgL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-SX-fFh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="155"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir5-aD-rr5">
+                                                            <rect key="frame" x="79" y="163" width="42" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nNz-vz-cgL" secondAttribute="trailing" id="BI6-9W-6gE"/>
+                                                <constraint firstAttribute="bottom" secondItem="nNz-vz-cgL" secondAttribute="bottom" id="Drs-gG-yhX"/>
+                                                <constraint firstItem="nNz-vz-cgL" firstAttribute="top" secondItem="3CJ-C4-Sqd" secondAttribute="top" id="S3E-r1-y0K"/>
+                                                <constraint firstItem="nNz-vz-cgL" firstAttribute="leading" secondItem="3CJ-C4-Sqd" secondAttribute="leading" id="umB-DS-2Hy"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3CJ-C4-Sqd" secondAttribute="bottom" id="NY4-NX-UbV"/>
+                                    <constraint firstItem="3CJ-C4-Sqd" firstAttribute="leading" secondItem="sfa-cR-rsQ" secondAttribute="leading" id="Q96-4U-2Rh"/>
+                                    <constraint firstAttribute="trailing" secondItem="3CJ-C4-Sqd" secondAttribute="trailing" id="iFH-yQ-SRa"/>
+                                    <constraint firstItem="3CJ-C4-Sqd" firstAttribute="top" secondItem="sfa-cR-rsQ" secondAttribute="top" id="s9H-Ab-kgw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="partImage" destination="N8U-SX-fFh" id="hjM-xW-nnQ"/>
+                                    <outlet property="partLabel" destination="ir5-aD-rr5" id="b90-tW-NO4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="9ik-x7-RJP" id="HyR-eN-NEj"/>
+                            <outlet property="delegate" destination="9ik-x7-RJP" id="7lw-qz-UyR"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Service Parts" id="of3-oS-LIc"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6m-PH-6aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960.8695652173915" y="1558.9285714285713"/>
+        </scene>
+        <!--Parts-->
+        <scene sceneID="lKt-Ab-KNt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UyN-7J-2R9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Parts" id="c26-rH-Uxb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zlJ-Wc-Ubg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ik-x7-RJP" kind="relationship" relationship="rootViewController" id="THN-5u-0nS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ys-cM-RCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="1558.9285714285713"/>
         </scene>
     </scenes>
     <resources>
