@@ -14,13 +14,16 @@ struct CustomData{
     var url: String
 }
 
+
+
+
 class LawnServicesViewController: UIViewController {
 
  
     
     let data = [
             CustomData(title: "Idk", image: #imageLiteral(resourceName: "lawnmowing-1"), url: "part"),
-            CustomData(title: "Idk", image: #imageLiteral(resourceName: "lawnmowing"), url: "part"),
+            CustomData(title: "Idk", image: #imageLiteral(resourceName: "Mulching"), url: "part"),
             CustomData(title: "Idk", image: #imageLiteral(resourceName: "LeafBlowing"), url: "part"),
             CustomData(title: "Idk", image: #imageLiteral(resourceName: "TreeTrimming"), url: "part"),
             CustomData(title: "Idk", image: #imageLiteral(resourceName: "WeedWacking"), url: "part"),
@@ -47,13 +50,13 @@ class LawnServicesViewController: UIViewController {
 
             view.addSubview(collectionView)
             collectionView.backgroundColor = .clear
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 25).isActive = true
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 105).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -0).isActive = true
             
-    //        collectionView.heightAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 0.5).isActive = true
-    //
+//            collectionView.heightAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 0.5).isActive = true
+    
             collectionView.delegate = self
             collectionView.dataSource = self //Methods wont run if these arent called
         }
@@ -69,7 +72,7 @@ class LawnServicesViewController: UIViewController {
 extension LawnServicesViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/2.1, height: collectionView.frame.width/2)
+        return CGSize(width: collectionView.frame.width/1, height: collectionView.frame.width/2)
        }
        
      
