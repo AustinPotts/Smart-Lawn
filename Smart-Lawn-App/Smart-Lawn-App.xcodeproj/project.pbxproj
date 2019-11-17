@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451D2FF52380E0F90032C3F4 /* LawnServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2FF42380E0F90032C3F4 /* LawnServicesViewController.swift */; };
 		45472F152340339C00EB74F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F142340339C00EB74F4 /* AppDelegate.swift */; };
 		45472F1A2340339C00EB74F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45472F182340339C00EB74F4 /* Main.storyboard */; };
 		45472F1C2340339E00EB74F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45472F1B2340339E00EB74F4 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		451D2FF42380E0F90032C3F4 /* LawnServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawnServicesViewController.swift; sourceTree = "<group>"; };
 		45472F112340339C00EB74F4 /* Smart-Lawn-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Lawn-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45472F142340339C00EB74F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45472F192340339C00EB74F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		45472F2E234044CE00EB74F4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				451D2FF42380E0F90032C3F4 /* LawnServicesViewController.swift */,
 				45E3A53B2380DEC300C3B065 /* LoginViewController.swift */,
 				45472FA52349125F00EB74F4 /* SearchServiceViewController.swift */,
 				45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */,
@@ -225,6 +228,7 @@
 				45472F502340FE5000EB74F4 /* AppointmentRepresentation.swift in Sources */,
 				45472F382340496000EB74F4 /* Appointment+Convenience.swift in Sources */,
 				45472FA62349125F00EB74F4 /* SearchServiceViewController.swift in Sources */,
+				451D2FF52380E0F90032C3F4 /* LawnServicesViewController.swift in Sources */,
 				45472F9C2348FECE00EB74F4 /* ServicePartCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
