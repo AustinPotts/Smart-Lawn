@@ -11,7 +11,6 @@
 		45472F1A2340339C00EB74F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45472F182340339C00EB74F4 /* Main.storyboard */; };
 		45472F1C2340339E00EB74F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45472F1B2340339E00EB74F4 /* Assets.xcassets */; };
 		45472F1F2340339E00EB74F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45472F1D2340339E00EB74F4 /* LaunchScreen.storyboard */; };
-		45472F272340372D00EB74F4 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F262340372D00EB74F4 /* LogInView.swift */; };
 		45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */; };
 		45472F2D2340446400EB74F4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2C2340446400EB74F4 /* ScheduleViewController.swift */; };
 		45472F312340466300EB74F4 /* Appointment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45472F2F2340466300EB74F4 /* Appointment.xcdatamodeld */; };
@@ -23,6 +22,8 @@
 		45472F9E2348FF3A00EB74F4 /* PartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */; };
 		45472FA1234902F200EB74F4 /* ServicePartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472FA0234902F200EB74F4 /* ServicePartController.swift */; };
 		45472FA32349034200EB74F4 /* ServicePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472FA22349034200EB74F4 /* ServicePart.swift */; };
+		45472FA62349125F00EB74F4 /* SearchServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45472FA52349125F00EB74F4 /* SearchServiceViewController.swift */; };
+		45E3A53C2380DEC300C3B065 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3A53B2380DEC300C3B065 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,6 @@
 		45472F1B2340339E00EB74F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45472F1E2340339E00EB74F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45472F202340339E00EB74F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45472F262340372D00EB74F4 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewController.swift; sourceTree = "<group>"; };
 		45472F2C2340446400EB74F4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		45472F302340466300EB74F4 /* Appointment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Appointment.xcdatamodel; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCollectionViewCell.swift; sourceTree = "<group>"; };
 		45472FA0234902F200EB74F4 /* ServicePartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePartController.swift; sourceTree = "<group>"; };
 		45472FA22349034200EB74F4 /* ServicePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePart.swift; sourceTree = "<group>"; };
+		45472FA52349125F00EB74F4 /* SearchServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceViewController.swift; sourceTree = "<group>"; };
+		45E3A53B2380DEC300C3B065 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				45472F9D2348FF3A00EB74F4 /* PartCollectionViewCell.swift */,
-				45472F262340372D00EB74F4 /* LogInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +111,8 @@
 		45472F2E234044CE00EB74F4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45E3A53B2380DEC300C3B065 /* LoginViewController.swift */,
+				45472FA52349125F00EB74F4 /* SearchServiceViewController.swift */,
 				45472F9B2348FECE00EB74F4 /* ServicePartCollectionViewController.swift */,
 				45472F2A2340444C00EB74F4 /* AppointmentsTableViewController.swift */,
 				45472F2C2340446400EB74F4 /* ScheduleViewController.swift */,
@@ -209,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E3A53C2380DEC300C3B065 /* LoginViewController.swift in Sources */,
 				45472F362340484000EB74F4 /* CoreDataStack.swift in Sources */,
 				45472F9E2348FF3A00EB74F4 /* PartCollectionViewCell.swift in Sources */,
 				45472F312340466300EB74F4 /* Appointment.xcdatamodeld in Sources */,
-				45472F272340372D00EB74F4 /* LogInView.swift in Sources */,
 				45472F152340339C00EB74F4 /* AppDelegate.swift in Sources */,
 				45472F2B2340444C00EB74F4 /* AppointmentsTableViewController.swift in Sources */,
 				45472FA1234902F200EB74F4 /* ServicePartController.swift in Sources */,
@@ -221,6 +224,7 @@
 				45472FA32349034200EB74F4 /* ServicePart.swift in Sources */,
 				45472F502340FE5000EB74F4 /* AppointmentRepresentation.swift in Sources */,
 				45472F382340496000EB74F4 /* Appointment+Convenience.swift in Sources */,
+				45472FA62349125F00EB74F4 /* SearchServiceViewController.swift in Sources */,
 				45472F9C2348FECE00EB74F4 /* ServicePartCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
