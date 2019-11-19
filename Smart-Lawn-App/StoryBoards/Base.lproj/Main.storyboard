@@ -59,9 +59,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="1Wr-Yu-tJ4">
-                                <rect key="frame" x="-25" y="88" width="459" height="725"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="ItT-91-a94">
                                 <rect key="frame" x="20" y="288" width="374" height="35"/>
                                 <subviews>
@@ -119,21 +116,17 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.11926004649999999" green="0.65311706849999995" blue="0.22088448499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ItT-91-a94" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="0D4-5B-Ny0"/>
                             <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="gJU-sG-rpv" secondAttribute="trailing" constant="20" id="3Dm-wz-Sa1"/>
-                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="bottom" secondItem="9wF-M3-itc" secondAttribute="bottom" id="FG0-86-XP3"/>
                             <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="ItT-91-a94" secondAttribute="trailing" constant="20" id="FIx-7p-V40"/>
                             <constraint firstItem="gJU-sG-rpv" firstAttribute="top" secondItem="ItT-91-a94" secondAttribute="bottom" constant="70" id="HB2-vP-Q3L"/>
-                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="-25" id="JAe-7t-4aN"/>
                             <constraint firstItem="ItT-91-a94" firstAttribute="top" secondItem="I4s-ZM-X6B" secondAttribute="bottom" constant="37" id="LaN-Cd-zUy"/>
                             <constraint firstItem="txI-6k-87N" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="ZZc-sF-odi"/>
-                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="top" secondItem="9wF-M3-itc" secondAttribute="top" id="Znp-vy-rWz"/>
                             <constraint firstItem="ItT-91-a94" firstAttribute="top" secondItem="9wF-M3-itc" secondAttribute="top" constant="200" id="adC-pQ-NBA"/>
                             <constraint firstItem="gJU-sG-rpv" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" constant="20" id="bxq-zj-yer"/>
                             <constraint firstItem="I4s-ZM-X6B" firstAttribute="trailing" secondItem="9wF-M3-itc" secondAttribute="trailing" id="mnt-WL-j6M"/>
-                            <constraint firstItem="1Wr-Yu-tJ4" firstAttribute="trailing" secondItem="9wF-M3-itc" secondAttribute="trailing" constant="20" id="ouC-N2-uuv"/>
                             <constraint firstItem="txI-6k-87N" firstAttribute="top" secondItem="gJU-sG-rpv" secondAttribute="bottom" id="pSD-Sz-qNz"/>
                             <constraint firstItem="9wF-M3-itc" firstAttribute="trailing" secondItem="txI-6k-87N" secondAttribute="trailing" id="tdJ-L5-742"/>
                             <constraint firstItem="I4s-ZM-X6B" firstAttribute="leading" secondItem="9wF-M3-itc" secondAttribute="leading" id="zPg-1M-WWF"/>
@@ -390,67 +383,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="zfi-iT-lgO">
-                                <rect key="frame" x="50" y="60" width="300" height="382"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-Dc-J45">
+                                <rect key="frame" x="20" y="347" width="374" height="146"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyv-Lf-bwk">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lawn Mowing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooI-YF-SQh">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <color key="textColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LJH-ck-PCb">
-                                        <rect key="frame" x="0.0" y="77" width="300" height="305"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: 45 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx5-cW-XnL">
+                                        <rect key="frame" x="0.0" y="55" width="285" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <color key="textColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 35.00$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD5-js-vIU">
+                                        <rect key="frame" x="0.0" y="110" width="188" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <color key="textColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydi-K3-SEj">
+                                <rect key="frame" x="20" y="493" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lawnmowing" translatesAutoresizingMaskIntoConstraints="NO" id="s5y-Yu-cBf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="297"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="382" id="Hbi-xY-IGu"/>
-                                    <constraint firstAttribute="width" constant="300" id="Uce-nL-NXo"/>
+                                    <constraint firstAttribute="height" constant="297" id="lgh-6u-x15"/>
+                                    <constraint firstAttribute="width" constant="414" id="tLE-3g-tP6"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xOF-8N-JM8">
-                                <rect key="frame" x="63" y="467" width="289.5" height="281"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmy-pg-mhB">
-                                        <rect key="frame" x="29" y="0.0" width="232" height="40"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="INw-oz-7RZ">
-                                        <rect key="frame" x="25" y="48" width="240" height="233"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFN-BG-mkT">
+                                <rect key="frame" x="49" y="599" width="313" height="62"/>
+                                <color key="backgroundColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="AKG-zZ-CdN"/>
+                                    <constraint firstAttribute="height" constant="62" id="NUB-wl-HIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="ADD TO SERVICE CART">
+                                    <color key="titleColor" red="0.11926004649999999" green="0.65311706849999995" blue="0.22088448499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addServiceToCartButton:" destination="Ub3-tC-Pbk" eventType="touchUpInside" id="1Hh-tH-ZqM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab3-UB-9jE">
+                                <rect key="frame" x="47" y="695" width="315" height="62"/>
+                                <color key="backgroundColor" red="0.92483610279999995" green="0.92483610279999995" blue="0.92483610279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="nBo-MC-iBq"/>
+                                    <constraint firstAttribute="width" constant="315" id="nXj-Cs-xEE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="SCHEDULE SINGLE SERVICE">
+                                    <color key="titleColor" red="0.11926004649999999" green="0.65311706849999995" blue="0.22088448499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scheduleSingleService:" destination="Ub3-tC-Pbk" eventType="touchUpInside" id="7Dh-ls-roh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.11926004649999999" green="0.65311706849999995" blue="0.22088448499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xOF-8N-JM8" firstAttribute="top" secondItem="zfi-iT-lgO" secondAttribute="bottom" constant="25" id="0SM-dS-hyV"/>
-                            <constraint firstItem="xOF-8N-JM8" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" constant="63" id="6Vm-vh-0mG"/>
-                            <constraint firstItem="zfi-iT-lgO" firstAttribute="top" secondItem="a1t-Yp-Qwj" secondAttribute="top" constant="60" id="Egy-N0-iar"/>
-                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="bottom" secondItem="xOF-8N-JM8" secondAttribute="bottom" constant="60" id="FeZ-Zf-wBK"/>
-                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="trailing" secondItem="xOF-8N-JM8" secondAttribute="trailing" constant="61.5" id="NMa-za-Bf3"/>
-                            <constraint firstItem="zfi-iT-lgO" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" constant="50" id="XkM-Hb-ahK"/>
+                            <constraint firstItem="s5y-Yu-cBf" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" id="DTj-1x-9gu"/>
+                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="trailing" secondItem="SsY-Dc-J45" secondAttribute="trailing" constant="20" id="Dbk-uN-pzA"/>
+                            <constraint firstItem="IFN-BG-mkT" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" constant="49" id="IAx-op-5lj"/>
+                            <constraint firstItem="Ab3-UB-9jE" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" constant="47" id="SOk-pr-cUW"/>
+                            <constraint firstItem="s5y-Yu-cBf" firstAttribute="top" secondItem="a1t-Yp-Qwj" secondAttribute="top" id="WHC-fc-jNx"/>
+                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="trailing" secondItem="IFN-BG-mkT" secondAttribute="trailing" constant="52" id="Wl3-d5-c8B"/>
+                            <constraint firstItem="s5y-Yu-cBf" firstAttribute="trailing" secondItem="a1t-Yp-Qwj" secondAttribute="trailing" id="Yz6-H6-7p2"/>
+                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="trailing" secondItem="Ab3-UB-9jE" secondAttribute="trailing" constant="52" id="e5Q-YX-9yG"/>
+                            <constraint firstItem="SsY-Dc-J45" firstAttribute="top" secondItem="s5y-Yu-cBf" secondAttribute="bottom" constant="50" id="keB-sE-hW3"/>
+                            <constraint firstItem="a1t-Yp-Qwj" firstAttribute="bottom" secondItem="Ab3-UB-9jE" secondAttribute="bottom" constant="51" id="l1c-b8-kfz"/>
+                            <constraint firstItem="SsY-Dc-J45" firstAttribute="leading" secondItem="a1t-Yp-Qwj" secondAttribute="leading" constant="20" id="pn7-ku-dYo"/>
+                            <constraint firstItem="IFN-BG-mkT" firstAttribute="top" secondItem="SsY-Dc-J45" secondAttribute="bottom" constant="106" id="vhN-Pa-FFZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a1t-Yp-Qwj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search Provided Services" id="Baw-Gc-1hm">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="YTE-Xl-jKs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="serviceImage" destination="s5y-Yu-cBf" id="5yZ-42-HSD"/>
+                        <outlet property="serviceLabel" destination="ooI-YF-SQh" id="U2n-4E-nWz"/>
+                        <outlet property="servicePrice" destination="JD5-js-vIU" id="jDJ-Cj-Xfh"/>
+                        <outlet property="serviceTimeDuration" destination="tx5-cW-XnL" id="jnF-AN-Wzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhG-Yw-ZlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2961" y="1601"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="1725.6696428571429"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Grass" width="640" height="1136"/>
         <image name="GrassLogo" width="200" height="200"/>
         <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="lawnmowing" width="396" height="320"/>
         <image name="person" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>

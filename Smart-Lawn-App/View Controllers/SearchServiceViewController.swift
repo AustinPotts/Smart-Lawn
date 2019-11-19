@@ -10,13 +10,26 @@ import UIKit
 
 class SearchServiceViewController: UIViewController {
 
+    @IBOutlet weak var serviceImage: UIImageView!
+    @IBOutlet weak var serviceLabel: UILabel!
+    @IBOutlet weak var serviceTimeDuration: UILabel!
+    @IBOutlet weak var servicePrice: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addServiceToCartButton(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func scheduleSingleService(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
