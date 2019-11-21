@@ -50,7 +50,7 @@ class LawnServicesViewController: UIViewController {
 
             view.addSubview(collectionView)
             collectionView.backgroundColor = .clear
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 105).isActive = true
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 155).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -0).isActive = true
@@ -127,6 +127,10 @@ class CustomCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.layer.cornerRadius = 15
+        
+        
+        
+        
         
         return iv
     }()
